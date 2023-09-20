@@ -1,9 +1,9 @@
 BEGIN:VCARD
 VERSION:3.0
-N:Smith;Tyler;
+N:Smith;Tyler;;Mr.;
 FN:Tyler Smith
-// company
-ORG:Web54
+PHOTO;MEDIATYPE=image/png;VALUE=URI:https://tyler-s.vercel.app/public/pfp.png
+ORG:Web54 - Web Development
 TEL;TYPE=WORK,VOICE:1-503-929-6253
 EMAIL;TYPE=INTERNET:tyler@web54.dev
 X-SOCIALPROFILE;type=GitHub;x-user=Atlessc:https://github.com/Atlessc
