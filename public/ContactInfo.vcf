@@ -1,6 +1,6 @@
 BEGIN:VCARD
 VERSION:3.0
-N:Smith;Tyler;;Mr.;
+N:Smith;Tyler;
 FN:Tyler Smith
 PHOTO;MEDIATYPE=image/png;VALUE=URI:https://tyler-s.vercel.app/public/pfp.png
 ORG:Web54 - Web Development
