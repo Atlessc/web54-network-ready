@@ -9,11 +9,11 @@
 }
 
 .App-container {
-    max-width: 1280px;
+  max-width: 1280px;
   z-index: 100;
   display: flex;
   min-height: 100svh;
-  max-height: 100vh;
+  overflow: hidden;
 }
 
 .Name {
