@@ -2,6 +2,8 @@ BEGIN:VCARD
 VERSION:3.0
 N:Smith;Tyler;
 FN:Tyler Smith
+// phone
+TEL;TYPE=WORK,VOICE:1-503-929-6253
 ORG:Web54 - Web Development
 EMAIL;TYPE=INTERNET:tyler@web54.dev
 X-SOCIALPROFILE;type=GitHub;x-user=Atlessc:https://github.com/Atlessc
