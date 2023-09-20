@@ -2,7 +2,8 @@ BEGIN:VCARD
 VERSION:3.0
 N:Smith;Tyler;
 FN:Tyler Smith
+ORG:Web54 - Web Development
 EMAIL;TYPE=INTERNET:tyler@web54.dev
-X-SOCIALPROFILE;type=github;x-user=Atlessc:
-X-SOCIALPROFILE;type=linkedin;x-user=deannelysc:https://www.linkedin.com/in/tylersmithwebdev/
+X-SOCIALPROFILE;type=GitHub;x-user=Atlessc:https://github.com/Atlessc
+X-SOCIALPROFILE;type=LinkedIn;x-user=tylersmithwebdev:https://www.linkedin.com/in/tylersmithwebdev/
 END:VCARD
