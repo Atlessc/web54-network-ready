@@ -32,10 +32,10 @@
 }
 
 .Name h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
-  color:#30aef7;
+  color:#68c8ff;
   text-shadow: 0 0 60px #ed4242;
 }
 
@@ -68,7 +68,7 @@
   width: 90%;
   height: calc(100vh - 4%);
   padding: 0.8rem;
-  background-color: #001cd529;
+  background-color: #00b7ff24;
   color: #f7f7f7;
   border: 0.2rem solid #ff939368;
   box-shadow: 0 0 100px #ff3131;
