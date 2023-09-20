@@ -27,13 +27,15 @@
 .Name h1 {
   color: #ff2740;
   font-size: 4rem;
+  margin-top: 1.5rem;
   margin-bottom: 0;
 }
 
 .Name h2 {
   font-size: 1.8rem;
-  margin-bottom: 2rem;
-  color:#30d9f7;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  color:#30aef7;
   text-shadow: 0 0 60px #ed4242;
 }
 
