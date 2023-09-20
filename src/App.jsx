@@ -1,35 +1,43 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useEffect, useState } from 'react';
+import { saveAs } from 'file-saver';
+import './App.css';
+import BackgroungImg from './component/background.jsx';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [vCardData, setVCardData] = useState('');
+
+  useEffect(() => {
+    fetch('/ContactInfo.vcf')
+      .then(response => response.text())
+      .then(data => {
+        setVCardData(data);
+      });
+  }, []);
+
+  const handleAddContact = () => {
+    if (window.confirm(`You are about to add Tyler's contact Info,\nWould you like to continue?`)) {
+      const blob = new Blob([vCardData], { type: 'text/vcard;charset=utf-8' });
+      saveAs(blob, 'ContactInfo.vcf');
+    }
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className='App-container'>
+      <div className='Name'>
+        <h1>Tyler Smith</h1>
+        <h2>React Web Developer</h2>
+        <div className='pfp'>
+          <img src='/pfp.png' alt='profile' className='pfpimg'/>
+          <div className='pfpimg-overlay' />
+          <div className='pfpimg-overlay2' />
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div className='CTA-Button'>
+        <button onClick={handleAddContact}>Add Contact</button>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      <BackgroungImg />
+    </div>
+  );
 }
 
-export default App
+export default App;

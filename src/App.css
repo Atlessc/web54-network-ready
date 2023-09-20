@@ -1,42 +1,104 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.App-container {
+  width: 100vw;
+  z-index: 100;
+  display: flex;
+  min-height: 100svh;
+  max-height: 100vh;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Name {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.Name h1 {
+  color: #ff2740;
+  font-size: 4rem;
+  margin-bottom: 0;
 }
 
-.card {
-  padding: 2em;
+.Name h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color:#30d9f7;
+  text-shadow: 0 0 60px #ed4242;
 }
 
-.read-the-docs {
-  color: #888;
+.pfp {
+  position: relative;
+  width: 13rem;
+  height: 13rem;
+  border: 0.35rem solid #3a3a3a;
+  background-color: #242424;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CTA-Button {
+  position: fixed;
+  bottom: 2%;
+  left: 0;
+  width: 100vw;
+}
+
+.App-container button {
+  font-size: 5rem;
+  width: 90%;
+  height: calc(100vh - 4%);
+  padding: 0.8rem;
+  background-color: #001cd529;
+  color: #f7f7f7;
+  border: 0.2rem solid #ff939368;
+  box-shadow: 0 0 100px #ff3131;
+}
+
+.pfpimg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 10;
+  filter: brightness(1.3);
+  -webkit-filter: brightness(1.3);
+}
+
+.pfpimg-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(0, 13, 255, 0.444);
+  z-index: 20;
+  mix-blend-mode:overlay;
+}
+
+.pfpimg-overlay2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(165, 19, 19, 0.31);
+  z-index: 20;
+  mix-blend-mode:exclusion;
 }
