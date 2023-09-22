@@ -148,6 +148,7 @@ circle.Active {
   width: 400px;
   height: fit-content;
   margin-top: 0;
+  z-index: 200;
 }
 
 .card {
