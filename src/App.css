@@ -74,6 +74,7 @@
   color: #f7f7f7;
   border: 0.2rem solid #ff939368;
   box-shadow: 0 0 100px #ff3131;
+  overflow: hidden;
 }
 
 .pfpimg {
