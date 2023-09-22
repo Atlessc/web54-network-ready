@@ -146,7 +146,7 @@ circle.Active {
 }
 
 .card-container {
-  position: fixed;
+  position: absolute;
   top: 70px;
   width: 400px;
   margin-top: 0;
