@@ -67,14 +67,13 @@
 }
 
 .App-container button {
-  font-size: 4rem;
+  font-size: 3rem;
   width: 90%;
   padding: 0.8rem;
   background-color: #00b7ff24;
   color: #f7f7f7;
   border: 0.2rem solid #ff939368;
   box-shadow: 0 0 100px #ff3131;
-  overflow: hidden;
 }
 
 .pfpimg {
@@ -187,7 +186,7 @@ circle.Active {
 .box a {
   border: 2px solid rgba(255, 7, 7, 0.265);
   border-radius: 5px;
-  padding: 5px;
+  padding: 5px 1.1rem;
   background-color: rgba(255, 7, 7, 0.265);
   font-size: 1rem;
 }
@@ -197,7 +196,7 @@ circle.Active {
   flex-direction: column;
 }
 
-@media screen and (min-width: 500px) {
+/* @media screen and (min-width: 500px) {
   .Name h1 {
     color: #f73030;
     font-size: 6rem;
@@ -225,4 +224,4 @@ circle.Active {
     bottom: 2%;
     left: 0;
   }
-}
+} */
