@@ -71,8 +71,7 @@ const setNodeto3 = () => {
             <line x1="125" y1="150" x2="550" y2="150"/>
             <line x1="-450" y1="150" x2="-50" y2="150"/>
           </svg>
-      </div>
-      <div className="card-container" style={{position: 'relative', left: `${cardRelative2NodePosition}`, transition:'left 650ms ease-in-out'}}>
+          <div className="card-container" style={{position: 'relative', left: `${cardRelative2NodePosition}`, transition:'left 650ms ease-in-out'}}>
       <svg width={25} height={25} style={{position: 'relative', left: `${triRelative2NodePosition}`, transition:'left 650ms ease-in-out'}}>
         <polygon points="12.5,7 0,25 25,25" fill="white" className='triangle'/>
       </svg>
@@ -88,6 +87,8 @@ const setNodeto3 = () => {
           </div>}
         </div>
       </div>
+      </div>
+
       <div className='CTA-Button'>
         <button onClick={handleAddContact}>Add Contact</button>
       </div>
