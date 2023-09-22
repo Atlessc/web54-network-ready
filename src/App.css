@@ -9,11 +9,14 @@
 }
 
 .App-container {
-  max-width: 1280px;
+  max-width: 500px;
   z-index: 100;
   display: flex;
   min-height: 100svh;
   overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .Name {
@@ -64,9 +67,8 @@
 }
 
 .App-container button {
-  font-size: 5rem;
+  font-size: 4rem;
   width: 90%;
-  height: calc(100vh - 4%);
   padding: 0.8rem;
   background-color: #00b7ff24;
   color: #f7f7f7;
@@ -103,6 +105,91 @@
   background-color: rgba(165, 19, 19, 0.31);
   z-index: 20;
   mix-blend-mode:exclusion;
+}
+
+.node-animation {
+  height: 5rem;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.node {
+  stroke: #000000;
+  stroke-width: 50;
+  fill: transparent;
+}
+
+circle {
+  cursor: pointer;
+}
+
+line {
+  stroke: #000000;
+  stroke-width: 50;
+}
+
+.Active {
+  fill: black;
+}
+
+circle.Active {
+  transition: cx 650ms ease-in-out;
+  -webkit-transition: cx 650ms ease-in-out;
+  -moz-transition: cx 650ms ease-in-out;
+  -ms-transition: cx 650ms ease-in-out;
+  -o-transition: cx 650ms ease-in-out;
+}
+
+.card-container {
+  position: relative;
+  width: 400px;
+  height: fit-content;
+  margin-top: 0;
+}
+
+.card {
+  position: relative;
+}
+
+.triangle {
+  position: absolute;
+  margin: 0;
+}
+
+.box {
+  position: absolute;
+  width: 150px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-top: -7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  color: #242424;
+}
+
+.box a {
+  border: 2px solid rgba(255, 7, 7, 0.265);
+  border-radius: 5px;
+  padding: 5px;
+  background-color: rgba(255, 7, 7, 0.265);
+  font-size: 1rem;
+}
+
+.link-stack {
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 500px) {
