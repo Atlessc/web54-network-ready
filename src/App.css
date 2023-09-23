@@ -195,33 +195,3 @@ circle.Active {
   display: flex;
   flex-direction: column;
 }
-
-/* @media screen and (min-width: 500px) {
-  .Name h1 {
-    color: #f73030;
-    font-size: 6rem;
-    margin-bottom: 0;
-    margin-top: 1rem;
-  }
-
-  .App-container button {
-    font-size: 8rem;
-    width: 30rem;
-    height: calc(100vh - 4%);
-    padding: 0.8rem;
-    background-color: #001cd529;
-    color: #f7f7f7;
-    border: 0.2rem solid #ff939368;
-    box-shadow: 0 0 100px #ff3131;
-  }
-
-  .CTA-Button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    bottom: 2%;
-    left: 0;
-  }
-} */
