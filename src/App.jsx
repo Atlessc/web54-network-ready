@@ -8,12 +8,9 @@ function App() {
   const node2 = "40"
   const node3 = "500"
 
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [windowHeight, setWindowHeight] = useState(window.innerHeight);
-
   const [vCardData, setVCardData] = useState('');
   const [activeNode, setActiveNode] = useState(node1);
-  const [cardInfo, setCardInfo] = useState('Web Dev');
+  const [cardInfo, setCardInfo] = useState('Projects');
 
   const [cardRelative2NodePosition, setCardRelative2NodePosition] = useState('40px');
   const [triRelative2NodePosition, setTriRelative2NodePosition] = useState('-160px');
@@ -35,7 +32,7 @@ function App() {
 
 const setNodeto1 = () => {
   setActiveNode(node1)
-  setCardInfo('Web Dev')
+  setCardInfo('Projects')
   setCardRelative2NodePosition('40px')
   setTriRelative2NodePosition('-160px')
 }
@@ -81,12 +78,12 @@ const setNodeto3 = () => {
           <div className="box">
             {cardInfo}
             <br/>
-            {cardInfo === 'Web Dev' && <a href='https://web54.dev' target='_blank' rel='noopener noreferrer'>Web54.Dev</a>}
-            {cardInfo === 'Resume' && <a href='https://tysmith.one' target='_blank' rel='noopener noreferrer'>TySmith.One</a>}
+            {cardInfo === 'Projects' && <a href='https://tysmith.one/projects' target='_blank' rel='noopener noreferrer'>My Projects</a>}
+            {cardInfo === 'Resume' && <a href='https://tysmith.one/resume' target='_blank' rel='noopener noreferrer'>My Resume</a>}
             {cardInfo === 'Music' &&
             <div className='link-stack'>
-            <a href='https://www.youtube.com/@atlessc5286' target='_blank' rel='noopener noreferrer'>YouTube</a>
             <a href='https://music.apple.com/us/artist/atlessc/1385247600' target='_blank' rel='noopener noreferrer'>Apple Music</a>
+            <a href='https://www.youtube.com/@atlessc5286' target='_blank' rel='noopener noreferrer'>YouTube</a>
             </div>}
           </div>
         </div>
