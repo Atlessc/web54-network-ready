@@ -79,7 +79,7 @@ const setNodeto3 = () => {
             {cardInfo}
             <br/>
             {cardInfo === 'Projects' && <a href='https://tysmith.one/projects' target='_blank' rel='noopener noreferrer'>My Projects</a>}
-            {cardInfo === 'Resume' && <a href='https://tysmith.one/resume' target='_blank' rel='noopener noreferrer'>My Resume</a>}
+            {cardInfo === 'Resume' && <a href='https://tysmith.one/webdevresume' target='_blank' rel='noopener noreferrer'>My Resume</a>}
             {cardInfo === 'Music' &&
             <div className='link-stack'>
             <a href='https://music.apple.com/us/artist/atlessc/1385247600' target='_blank' rel='noopener noreferrer'>Apple Music</a>
